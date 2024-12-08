@@ -1,0 +1,10 @@
+.content{
+    grid-area: co;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1.5px 1.5px 4.5px grey;
+  }
+
+.content h2{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+header{
+    grid-area: hd;
+    background-color: #C49CA2;
+}
+
+.header-content {
+    display:grid;
+    grid-template-columns: .5fr 2fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    font-family:  Helvetica, Arial, sans-serif;
+    color: #34495e;
+    background-color: #EFC3CA;
+    padding: 14px 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 600px) {
+    .navbar a {
+        flex: 100%;
+    }
+}

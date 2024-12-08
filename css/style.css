@@ -1,1 +1,50 @@
+/* Import all the additional Style Componets */
+@import url('header.css');
+@import url('sidebar.css');
+@import url('footer.css');
+@import url('content.css');
+
+/* Set up the main container grid for the blog posts */
+.blog-post-container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+
+   grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: 
+      "hd hd hd hd hd hd"
+      "co co co co co sd"
+      "ft ft ft ft ft ft";
+  }
+
+/* Mobile Layout */
+  @media (max-width: 600px) {
+    .blog-post-container { grid-template-columns: 1fr; }
+  }
+  
+/* Global Style Settings */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+
+blockquote {
+    padding: 1rem;
+    font-size: 1.2em;
+    border-left: 2px solid #66d7d1;
+    padding: 0.5rem;
+    font-size: 1.1em;
+}
+
 
